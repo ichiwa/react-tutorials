@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "$(npm bin)/eslint ./src",
-    "start:dev": "$(npm bin)/webpack-dev-server --progress --color --hot --inline --content-base dist/",
-    "start": "$(npm bin)/webpack && open ./dist/index.html"
+    "start:dev": "$(npm bin)/webpack-dev-server --progress --color --hot --inline --content-base www/",
+    "start": "$(npm bin)/webpack && open ./www/index.html"
   },
   "author": "",
   "license": "MIT",

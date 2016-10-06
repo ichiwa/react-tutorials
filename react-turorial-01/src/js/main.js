@@ -1,30 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-class Counter extends React.Component {
-  constructor(p) {
-    super(p);
-  }
-  render() {
-    return(
-      <div> Current count is {this.props.count}</div>
-    );
-  }
-}
-
-class Buttons extends React.Component {
-  constructor(p) {
-    super(p);
-  }
-  render() {
-    return(
-    <div>
-        <button onClick={this.props.inc}>Increment</button>
-        <button onClick={this.props.dec}>Decrement</button>
-      </div>
-    );
-  }
-}
+import Counter from './components/counter';
+import Buttons from './components/buttons';
 
 class App extends React.Component {
   constructor( p ) {

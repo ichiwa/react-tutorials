@@ -6,7 +6,7 @@ import Buttons from './buttons';
 import * as CounterActions from './../actions/counter_action';
 
 // @connect( state => ({
-//   image: state.image,
+//   count: state.count,
 // }))
 // export default class App extends React.Component {
 class App extends React.Component {

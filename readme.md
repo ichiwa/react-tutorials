@@ -5,7 +5,7 @@ react + webpack
 react + webpack + flux
 
 # react-tutorial-03 
-react + webpack + redux
+react + webpack + react + redux
 
 # react-tutorial-04
 react + webpack + redux-saga

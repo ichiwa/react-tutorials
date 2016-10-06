@@ -7,7 +7,7 @@ import * as CounterActions from './../actions/counter_action';
 
 class App extends React.Component {
   render() {
-    const { count, dispatch } = this.props
+    const { count, dispatch, show } = this.props
     const actions = bindActionCreators(CounterActions, dispatch)    
     return (
       <div>
@@ -20,13 +20,7 @@ class App extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    count: state.count
-  }
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    counterActions: bindActionCreators(CounterActions, dispatch)
+    count: state.count,
   }
 }
 

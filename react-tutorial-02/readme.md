@@ -1,7 +1,6 @@
 # react-turorial-02
 
-react + webpack + flux or dev-server
-
+react + webpack + flux
 
 `npm run start:dev` 
 

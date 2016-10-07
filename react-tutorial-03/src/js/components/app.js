@@ -1,9 +1,8 @@
 import React from "react"
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import Counter from './counter';
 import Buttons from './buttons';
-import * as CounterActions from './../actions/counter_action';
+import { INCREMENT, DECREMENT } from './../actions/counterActions';
 
 // @connect( state => ({
 //   count: state.count,
@@ -12,13 +11,21 @@ import * as CounterActions from './../actions/counter_action';
 class App extends React.Component {
   render() {
     const { count, dispatch} = this.props;
-    const actions = bindActionCreators(CounterActions, dispatch);
+    const action = type => dispatch({type});
     return (
       <div>
         <Counter count={count}/>
-        <Buttons actions={actions}/>
+        <Buttons 
+          onIncrement={() => action(INCREMENT)}
+          onDecrement={() => action(DECREMENT)}
+        />
       </div>
     )
   }
 }
-export default connect((state) => {return {count: state.count}})(App);
+const mapStateToProps = (store) => {
+  return {
+    count: store.counterReducer.count
+  };
+}
+export default connect(mapStateToProps)(App);

@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import { counterReducer } from './../reducers/counter_reducer';
+import counterReducer from './../reducers/counterReducer';
 
 export default function configureStore(initialState) {
   const store = createStore(

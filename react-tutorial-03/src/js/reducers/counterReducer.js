@@ -1,10 +1,11 @@
-import { INCREMENT, DECREMENT } from './../actions/counter_action';
+import { combineReducers } from 'redux';
+import { INCREMENT, DECREMENT } from './../actions/counterActions';
 
 const initialState = {
   count: 0
 }
 
-export const counterReducer = (state = initialState, action) => {
+const counterReducer = (state = initialState, action) => {
   switch (action.type) {
     case INCREMENT:
       return { count: state.count + 1 }
@@ -14,3 +15,5 @@ export const counterReducer = (state = initialState, action) => {
       return state;
   }
 }
+
+export default combineReducers({counterReducer});

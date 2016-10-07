@@ -8,4 +8,4 @@ react + webpack + flux
 react + webpack + react + redux
 
 # react-tutorial-04
-react + webpack + redux-saga
+react + webpack + react + redux + redux-saga

@@ -4,8 +4,8 @@ export default class Buttons extends React.Component {
   render() {
     return(
     <div>
-        <button onClick={this.props.actions.inc}>Increment</button>
-        <button onClick={this.props.actions.dec}>Decrement</button>
+        <button onClick={this.props.onIncrement}>Increment</button>
+        <button onClick={this.props.onDecrement}>Decrement</button>
       </div>
     );
   }

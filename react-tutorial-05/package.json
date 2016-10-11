@@ -1,0 +1,49 @@
+{
+  "name": "react-turorial-05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "$(npm bin)/eslint ./src",
+    "start:dev": "$(npm bin)/webpack --watch -d & $(npm bin)/browser-sync start --config bs-config.js",
+    "build": "$(npm bin)/webpack",
+    "start": "npm run build && open ./www/index.html"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "redux-saga": "^0.12.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.4.5",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-assign": "^6.5.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-2": "^6.17.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-register": "^6.9.0",
+    "babel-runtime": "^6.6.1",
+    "browser-sync": "^2.17.2",
+    "css-loader": "^0.25.0",
+    "eslint": "^2.13.1",
+    "eslint-loader": "^1.5.0",
+    "eslint-plugin-react": "^6.3.0",
+    "file-loader": "^0.9.0",
+    "flux": "^3.0.0",
+    "object-assign": "^4.1.0",
+    "react-hot-loader": "^3.0.0-beta.5",
+    "redux-devtools": "^3.3.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2"
+  }
+}

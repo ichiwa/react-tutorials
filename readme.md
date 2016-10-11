@@ -1,11 +1,15 @@
 # react-tutorial-01
-react + webpack
+react + webpack + webpack-dev-server
 
 # react-tutorial-02
-react + webpack + flux
+react + webpack + webpack-dev-server + flux
 
 # react-tutorial-03 
-react + webpack + react + redux
+react + webpack + webpack-dev-server + react + redux
 
 # react-tutorial-04
-react + webpack + react + redux + redux-saga
+react + webpack + webpack-dev-server + react + redux + redux-saga
+
+# react-tutorial-05
+react + webpack + browsersync + react + redux + redux-saga
+

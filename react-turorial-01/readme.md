@@ -1,6 +1,6 @@
 # react-turorial-01
 
-react + webpack
+react + webpack + webpack-dev-server
 
 `npm run start:dev` 
 

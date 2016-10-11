@@ -1,6 +1,6 @@
 # react-turorial-05
 
-react + webpack + browser-sync + redux + redux-saga
+react + redux + redux-saga + webpack + browsersync 
 
 `npm run start:dev` 
 

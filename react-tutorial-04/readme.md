@@ -1,6 +1,6 @@
 # react-turorial-04
 
-react + webpack + webpack-dev-server + redux + redux-saga
+react + redux + redux-saga + webpack + webpack-dev-server
 
 `npm run start:dev` 
 

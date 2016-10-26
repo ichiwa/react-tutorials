@@ -2,7 +2,7 @@ import React from "react"
 import { connect } from 'react-redux';
 import Counter from './counter';
 import Buttons from './buttons';
-import { INCREMENT, DECREMENT, INCREMENT_ASYNC, DECREMENT_ASYNC} from './../actions/counter_action';
+import { INCREMENT, DECREMENT, INCREMENT_ASYNC, DECREMENT_ASYNC} from './../actions';
 
 class App extends React.Component {
   render() {

@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 import { createStore, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-import counterReducer from './../reducers/counter_reducer';
+import counterReducer from './../reducers';
 import rootSaga from './../sagas/rootsaga';
 
 export default function configureStore(initialState) {

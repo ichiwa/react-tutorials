@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { INCREMENT, DECREMENT } from './../actions/counter_action';
+import { INCREMENT, DECREMENT } from './../actions';
 
 const initialState = {
   count: 0
